@@ -1,6 +1,6 @@
 package principal;
 
-import view.FrmSorteio;
+import visao.FrmSorteio;
 
 public class Principal {
 
