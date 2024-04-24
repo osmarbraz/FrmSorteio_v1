@@ -1,4 +1,4 @@
-# Formulário para a roleta eletrônica usando a IDE NetBeans.
+# Interface gráfica para a roleta eletrônica usando a IDE NetBeans.
 
 ## Contextualização
 
