@@ -141,7 +141,7 @@ public class FrmSorteio extends javax.swing.JFrame {
                     .addComponent(jLabel1))
                 .addGap(18, 18, 18)
                 .addComponent(JBFechar)
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
 
         pack();
@@ -156,7 +156,7 @@ public class FrmSorteio extends javax.swing.JFrame {
         listaNumeros.clear(); 
         //Zera o label do número sorteado
         JLNumerosorteado.setText("0"); 
-        //Para Saber quantos números ainda faltam para ser sorteado
+        //Para saber quantos números ainda faltam para ser sorteado
         quantidadeFaltante = 0;   
         ordem = 0;
         //Verifica se a quantidade é maior que 0
@@ -206,12 +206,10 @@ public class FrmSorteio extends javax.swing.JFrame {
     }//GEN-LAST:event_JBSortearActionPerformed
 
     private void JBFecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBFecharActionPerformed
-        // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_JBFecharActionPerformed
 
     private void JBCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBCancelarActionPerformed
-        // TODO add your handling code here:
         // Habilita o botão novo
         this.JBNovo.setEnabled(true);  
         // Desabilita o botão sortear
