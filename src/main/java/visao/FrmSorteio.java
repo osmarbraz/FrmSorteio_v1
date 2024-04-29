@@ -150,27 +150,27 @@ public class FrmSorteio extends javax.swing.JFrame {
     private void JBNovoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBNovoActionPerformed
         //Recupera a quantidade de números a serem sorteados
         int quantidadeNumeroSorteados = Integer.parseInt(this.JTFQuantidadeNumerosSorteados.getText());
-        //Limpa o text area
+        // Limpa o text area
         JASaida.setText("");
-        //Esvazia a lista
+        // Esvazia a lista
         listaNumeros.clear(); 
-        //Zera o label do número sorteado
+        // Zera o label do número sorteado
         JLNumerosorteado.setText("0"); 
-        //Para saber quantos números ainda faltam para ser sorteado
+        // Para saber quantos números ainda faltam para ser sorteado
         quantidadeFaltante = 0;   
         ordem = 0;
-        //Verifica se a quantidade é maior que 0
+        // Verifica se a quantidade é maior que 0
         if (quantidadeNumeroSorteados > 0) {   
-            //Adiciona os números de 1 até quantidade sorteados na lista
+            // Adiciona os números de 1 até quantidade sorteados na lista
             for (int i = 1; i <= quantidadeNumeroSorteados; i++) {
                 listaNumeros.add(i);
             }
             quantidadeFaltante = quantidadeNumeroSorteados;
-            //Habilita o botão sortear
-            this.JBSortear.setEnabled(true);
-            //Desabilita o botão novo
+            // Desabilita o botão novo
             this.JBNovo.setEnabled(false);
-            //Habilita o botão cancelar
+            // Habilita o botão sortear
+            this.JBSortear.setEnabled(true);            
+            // Habilita o botão cancelar
             this.JBCancelar.setEnabled(true);
         } else {
             JOptionPane.showMessageDialog(null, "Valor deve ser maior que 0!");        
@@ -194,7 +194,7 @@ public class FrmSorteio extends javax.swing.JFrame {
             JLNumerosorteado.setText(listaNumeros.get(indice).toString()); 
             // Remove o número da lista
             listaNumeros.remove(indice); 
-        } else { //Se acabou os numeros a serem sorteados
+        } else { // Se acabou os numeros a serem sorteados
             JOptionPane.showMessageDialog(null, "Não Há números a serem sorteados \n inicie um novo Sorteio");
             // Habilita o botão novo
             this.JBNovo.setEnabled(true);  
@@ -206,6 +206,7 @@ public class FrmSorteio extends javax.swing.JFrame {
     }//GEN-LAST:event_JBSortearActionPerformed
 
     private void JBFecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBFecharActionPerformed
+        // Encerra a aplicação
         System.exit(0);
     }//GEN-LAST:event_JBFecharActionPerformed
 
