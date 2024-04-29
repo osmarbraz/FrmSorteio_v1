@@ -10,7 +10,7 @@ public class FrmSorteio extends javax.swing.JFrame {
     ArrayList<Integer> listaNumeros = new ArrayList(); 
     // Gerador de numeros aleatórios
     Random geradorNumero;  
-     // Para Saber quantos números ainda faltam para ser sorteado
+    // Para Saber quantos números ainda faltam para ser sorteado
     int quantidadeFaltante = 0;  
     //ordenação do sorteio, meramente para exibir qual a posição foi sorteado, primeiro, segundo, etc...
     int ordem = 0;  
@@ -178,7 +178,7 @@ public class FrmSorteio extends javax.swing.JFrame {
     }//GEN-LAST:event_JBNovoActionPerformed
 
     private void JBSortearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBSortearActionPerformed
-         //Se existe números a serem sorteados então
+         // Se existe números a serem sorteados então
         if (!listaNumeros.isEmpty()) { 
             // Cria um novo gerador de número aleatório (Random)
             geradorNumero = new Random(); 
